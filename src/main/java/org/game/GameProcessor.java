@@ -29,14 +29,10 @@ public class GameProcessor {
                 gameState = GameState.DRAW;
             } else {
                 makeComputerTurn();
-
-
-
                 if (isComputerWon()) {
                     gameState = GameState.COMPUTER_WON;
                 }
             }
-
             gameConsoleOutput.printBox(box);
         }
     }
